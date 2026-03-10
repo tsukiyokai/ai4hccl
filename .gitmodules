@@ -7,3 +7,6 @@
 [submodule "skills/vibe-review"]
 	path = skills/vibe-review
 	url = https://github.com/tsukiyokai/vibe-review-skill.git
+[submodule "skills/vibe-pr"]
+	path = skills/vibe-pr
+	url = https://github.com/tsukiyokai/vibe-pr.git
