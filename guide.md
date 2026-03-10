@@ -396,7 +396,7 @@ HCCL定制——模式库应包含以下特有pattern:
 
 #### 策略B-1: CMake一致性守卫(Tier 1)
 
-在CI中添加脚本： `find src/ -name "*.cc" | sort` vs `grep "\.cc" CMakeLists.txt | sort`，差集即遗漏的源文件。
+在CI中添加脚本：`find src/ -name "*.cc" | sort` vs `grep "\.cc" CMakeLists.txt | sort`，差集即遗漏的源文件。
 
 - 预期收益：拦截构建类缺陷的40-50%。
 - HCCL定制：HCCL的CMake逻辑比周边算子组更碎片化（周边算子组新增算子=固定CMake模式），一致性检查价值更大。
@@ -404,7 +404,7 @@ HCCL定制——模式库应包含以下特有pattern:
 
 #### 策略B-2：编译器诊断全开(Tier 1)
 
-配置： `-Werror -Wshadow -Wconversion -Wformat -Wsign-compare`
+配置：`-Werror -Wshadow -Wconversion -Wformat -Wsign-compare`
 
 - 预期收益：拦截约15%总缺陷（跨仓验证数据[5]）。
 - 投入：低（编译选项修改）。
@@ -876,7 +876,7 @@ HCCL实践建议：
 - 配合策略C-5（远程开发模式），Claude Code运行在本地，编译验证走远端
 - 对God Object文件，利用CLAUDE.md约束AI不得整体读取(C-3 + C5)
 
-官方文档： https://docs.anthropic.com/en/docs/claude-code
+官方文档：https://docs.anthropic.com/en/docs/claude-code
 
 ### Skills开发实践
 
