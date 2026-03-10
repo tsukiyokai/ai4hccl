@@ -41,13 +41,11 @@ npx @tsukiyokai/vibe-review --global
 在 Claude Code 对话中直接调用：
 
 ```
-> /vibe-review src/transport.cpp              # 审查单个文件
-> /vibe-review HEAD~3..HEAD                   # 审查一段提交
-> /vibe-review https://github.com/.../pull/42 # 审查 PR
-
-> /vibe-design                                # 根据需求生成设计文档（交互式）
-
-> /vibe-pr                                    # 从 issue 到 PR 合入的全流程自动化
+> /vibe-review src/transport.cpp  # 审查单个文件
+> /vibe-review HEAD~3..HEAD  # 审查一段提交
+> /vibe-review https://github.com/.../pull/42  # 审查 PR
+> /vibe-design  # 根据需求生成设计文档（交互式）
+> /vibe-pr  # 从 issue 到 PR 合入的全流程自动化
 ```
 
 指导书 `guide.md` 可直接阅读，了解 HCCL 场景下 AI 辅助研发的策略、边界和实施路线。
@@ -65,12 +63,12 @@ git submodule foreach 'git checkout main && git pull'
 
 ### 子仓列表
 
-| 子仓 | 仓库地址 | 说明 |
-|------|----------|------|
-| docs | [tsukiyokai/hccl-docs](https://github.com/tsukiyokai/hccl-docs) | 技术文档、论文、分析报告 |
-| skills/vibe-design | [tsukiyokai/vibe-design](https://github.com/tsukiyokai/vibe-design) | 设计文档生成 skill |
-| skills/vibe-review | [tsukiyokai/vibe-review-skill](https://github.com/tsukiyokai/vibe-review-skill) | 代码审查 skill |
-| skills/vibe-pr | [tsukiyokai/vibe-pr](https://github.com/tsukiyokai/vibe-pr) | CANN 社区自主开发 bot |
+| 子仓               | 仓库地址                                                                        | 说明                     |
+| ------------------ | ------------------------------------------------------------------------------- | ------------------------ |
+| docs               | [tsukiyokai/hccl-docs](https://github.com/tsukiyokai/hccl-docs)                 | 技术文档、论文、分析报告 |
+| skills/vibe-design | [tsukiyokai/vibe-design](https://github.com/tsukiyokai/vibe-design)             | 设计文档生成 skill       |
+| skills/vibe-review | [tsukiyokai/vibe-review-skill](https://github.com/tsukiyokai/vibe-review-skill) | 代码审查 skill           |
+| skills/vibe-pr     | [tsukiyokai/vibe-pr](https://github.com/tsukiyokai/vibe-pr)                     | CANN 社区自主开发 bot    |
 
 ### 贡献流程
 
