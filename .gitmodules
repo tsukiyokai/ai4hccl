@@ -1,0 +1,9 @@
+[submodule "docs"]
+	path = docs
+	url = https://github.com/tsukiyokai/hccl-docs.git
+[submodule "skills/vibe-design"]
+	path = skills/vibe-design
+	url = https://github.com/tsukiyokai/vibe-design.git
+[submodule "skills/vibe-review"]
+	path = skills/vibe-review
+	url = https://github.com/tsukiyokai/vibe-review-skill.git
